@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <script src="./scripts/register.js" defer async></script>
+    <div class="topnav">
+      <a class="active" href="./index.html">Home</a>
+      <a href="./login.html">Login</a>
+      <a href="./about.html">About</a>
+    </div>
+
+    <template id="register-form-template"></template>
+        <form>
+            <div class="container">
+            <h1>Register</h1>
+            <p>Please fill in the form to create an account.</p>
+            <hr>
+        
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter username" name="username" id="username" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter password" name="psw" id="psw" required>
+
+            <hr>
+            <button id="register-btn" type="submit" class="registerbtn">Register</button>
+            </div>
+        </form>
+    </template>
+  </body>
+</html>
