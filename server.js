@@ -2,19 +2,14 @@ const express = require('express');
 const path = require('path');
 const app = express();
 // const apiRouter = require('./api');
+const data = {
+    users: require('./data/users.json'),
+    setUsers: function(newUsers) {
+        this.users = newUsers;
+    }
+};
 
 const PORT = process.env.PORT || 3000;
-
-const users = [
-    {
-        username: 'Vladi Markova',
-        psw: 'bdejhduie'
-    },
-    {
-        username: 'Jon Arbuckle',
-        psw: 'niswaji'
-    }
-];
 
 app.use(express.static('public'));
 app.use(express.json());
@@ -28,7 +23,7 @@ app.get('/', (req, res) => {
 // })
 
 app.get('/user', (req, res) => {
-    const sanitizedUsers = users.map((user) => {
+    const sanitizedUsers = data.users.map((user) => {
     return {
         username: user.username
     }})
