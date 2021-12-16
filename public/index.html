@@ -7,17 +7,55 @@
 
     <title>Hello there!</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./scripts/client.js" defer async></script>
     <!-- <img src="./img/nice-puppy.jpg"> -->
   </head>
 
   <body>
-    <script src="./scripts/client.js" defer async></script>
-
     <div class="topnav">
       <a class="active" href="/">Home</a>
-      <a href="./register.html">Register</a>
+      <a id="register-link" href="./register.html">Register</a>
       <a href="./login.html">Login</a>
       <a href="./about.html">About</a>
+    </div>
+    <div id="root">
+      <template id="register-form-template">
+          <form id='register-form'>
+              <div class="container">
+              <h1>Register</h1>
+              <p>Please fill in the form to create an account.</p>
+              <hr>
+          
+              <label for="username"><b>Username</b></label>
+              <input type="text" placeholder="Enter username" name="username" id="reg-username" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter password" name="psw" id="reg-psw" required>
+
+              <hr>
+              <button id="register-btn" type="submit" class="registerbtn">Register</button>
+              </div>
+              <div id="response" class="response-text"></div>
+          </form>
+      </template>
+
+      <template id="login-form-template">
+        <form>
+            <div class="container">Register
+            <h1>Login</h1>
+            <hr>
+        
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter username" name="username" id="username" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter password" name="psw" id="psw" required>
+
+            <hr>
+            <button type="submit" class="registerbtn">Register</button>
+            </div>
+        </form>
+      </template>
     </div>
 
   </body>
