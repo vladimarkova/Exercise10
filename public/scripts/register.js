@@ -13,7 +13,7 @@
             psw: psw.value
         };
 
-        fetch('http://localhost:3000/user', {
+        fetch('http://localhost:3000/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
