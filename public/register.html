@@ -18,21 +18,22 @@
     </div>
 
     <template id="register-form-template"></template>
-        <form>
+        <form id='register-form'>
             <div class="container">
             <h1>Register</h1>
             <p>Please fill in the form to create an account.</p>
             <hr>
         
             <label for="username"><b>Username</b></label>
-            <input type="text" placeholder="Enter username" name="username" id="username" required>
+            <input type="text" placeholder="Enter username" name="username" id="reg-username" required>
         
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter password" name="psw" id="psw" required>
+            <input type="password" placeholder="Enter password" name="psw" id="reg-psw" required>
 
             <hr>
             <button id="register-btn" type="submit" class="registerbtn">Register</button>
             </div>
+            <div id="response" class="response-text"></div>
         </form>
     </template>
   </body>
