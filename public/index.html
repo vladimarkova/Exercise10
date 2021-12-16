@@ -7,18 +7,19 @@
 
     <title>Hello there!</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <script src="./scripts/client.js" defer async></script>
+    <!-- <script src="./scripts/client.js" defer async></script> -->
     <!-- <img src="./img/nice-puppy.jpg"> -->
   </head>
 
   <body>
     <div class="topnav">
-      <a class="active" href="/">Home</a>
-      <a id="register-link" href="./register.html">Register</a>
-      <a href="./login.html">Login</a>
-      <a href="./about.html">About</a>
+      <a href="/" class="active" id="home-link">Home</a>
+      <a href="register.html" id="register-link">Register</a>
+      <a href="login.html" id="login-link">Login</a>
+      <a href="about.html" id="about-link">About</a>
     </div>
     <div id="root">
+      <div id="test">Testing...</div>
       <template id="register-form-template">
           <form id='register-form'>
               <div class="container">
@@ -40,8 +41,8 @@
       </template>
 
       <template id="login-form-template">
-        <form>
-            <div class="container">Register
+        <form id="login-form">
+            <div class="container">
             <h1>Login</h1>
             <hr>
         
@@ -55,6 +56,10 @@
             <button type="submit" class="registerbtn">Register</button>
             </div>
         </form>
+      </template>
+
+      <template id="about-template">
+        <div id="about-info">About us here...</div>
       </template>
     </div>
 
