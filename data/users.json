@@ -1,10 +1,1 @@
-[
-    {
-        "username": "Vladi Markova",
-        "psw": "bdejhduie"
-    },
-    {
-        "username": "Jon Arbuckle",
-        "psw": "niswaji"
-    }
-]
+[{"username":"Vladi Markova","psw":"bdejhduie"},{"username":"Jon Arbuckle","psw":"niswaji"},{"username":"Gosho","psw":"$2b$10$KPwAP0X.Bi4iqDl2r6/wJ.lOzIOH2ODmYmTdyvI0Z0ryhT7CGyNUa"},{"username":"Pesho","psw":"$2b$10$5chjjLCSQ0GGVSFKrDOUhe/4zHc1eAPiM7rExbnDexZmuLTv45o/u"}]

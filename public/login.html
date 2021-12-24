@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Register</title>
+    <title>Login</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -17,20 +17,21 @@
     </div>
 
     <template id="login-form-template"></template>
-      <form>
-          <div class="container">Register
+      <form id="login-form">
+          <div class="container">Login
           <h1>Login</h1>
           <hr>
       
-          <label for="username"><b>Username</b></label>
-          <input type="text" placeholder="Enter username" name="username" id="username" required>
+          <label for="log-username"><b>Username</b></label>
+          <input type="text" placeholder="Enter username" name="log-username" id="log-username" required>
       
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter password" name="psw" id="psw" required>
+          <label for="log-psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter password" name="log-psw" id="log-psw" required>
 
           <hr>
-          <button type="submit" class="registerbtn">Register</button>
+          <button type="submit" class="loginbtn">Login</button>
           </div>
+          <div id="response" class="response-text"></div>
       </form>
   </template>
   </body>
